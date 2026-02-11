@@ -349,11 +349,12 @@ const Home = () => {
                 >
                   <div className="section-icon"></div>
                   <div className="section-title">
-                    We Build Your Sustainable Lifestyle
+                    End-to-End Home Design & Build Solutions
                   </div>
                 </div>
-                <h1 className="hero-title reveal-brush">
-                  INTERIOR FOR HOME
+                <h1 className="hero-title reveal-brush text-uppercase" >
+                  {/* INTERIOR FOR HOME */}
+                  Home Design & Construction
                 </h1>
 
                 <div className="reveal-image">
@@ -376,8 +377,9 @@ const Home = () => {
                 </div>
 
                 <p className="mb-0" data-aos="fade-up" data-aos-delay="400">
-                  Crafting interiors that showcase your individuality, elevate
-                  your lifestyle, and infuse timeless beauty into every space.
+                  From floor plans and elevations to construction and interiors, we deliver complete home solutions tailored to your vision and lifestyle.
+                  {/* Crafting interiors that showcase your individuality, elevate
+                  your lifestyle, and infuse timeless beauty into every space. */}
                 </p>
               </div>
             </div>
@@ -469,7 +471,7 @@ const Home = () => {
             <div className="row g-4 serviceBox">
               <div className="col-lg-4">
 
-                <NavLink to={service.route}  className="serviceImage">
+                <NavLink to={service.route} className="serviceImage">
                   <div className="reveal-image">
                     <img
                       className="img-fluid"

@@ -30,7 +30,7 @@ const Footer = () => {
     {
       heading: "Address",
       links: [
-        { label: "info@aurelo.com", path: "mailto:info@aurelo.com" },
+        { label: "shindeconsultantsindore@gmail.com", path: "shindeconsultantsindore@gmail.com" },
         { label: "+91 8770954145", path: "tel:+918770954145" },
         { label: "47, Annapurna Rd, Vaishali Nagar, Indore, Madhya Pradesh 452009", path: "#" },
       ],

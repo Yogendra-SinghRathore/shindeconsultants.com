@@ -101,8 +101,8 @@ ${formData.message.trim()}`,
 
                   <p class="d-flex gap-3 align-items-center">
                     <span><i class="ri-mail-line"></i></span>
-                    <a href="mailto:info@aurelo.com" target="_blank" rel="noopener noreferrer">
-                      info@aurelo.com
+                    <a href="mailto:www.shindeconsultantsindore@gmail.com" target="_blank" rel="noopener noreferrer">
+                      shindeconsultantsindore@gmail.com
                     </a>
                   </p>
 
