@@ -69,10 +69,10 @@ a {
   padding-bottom: 10px;
 }
 
-img {
+.brandLogo {
   max-width: 100%;
   display: block;
-  width: 215px;
+  width: 233px;
 }
 
 .section {

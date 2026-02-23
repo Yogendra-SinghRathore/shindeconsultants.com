@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import Logo from "../assets/images/mainLogoO.png";
+import Logo from "../assets/images/shindeConsLogoO.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -46,7 +46,7 @@ const Navbar = () => {
           to="/"
           onClick={() => handleSectionNav("hero")}
         >
-          <img src={Logo} alt="brandLogo" />
+          <img className="brandLogo" src={Logo} alt="brandLogo" />
         </NavLink>
 
         {/* Toggler */}
