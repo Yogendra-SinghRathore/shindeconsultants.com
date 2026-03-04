@@ -124,6 +124,10 @@ const Footer = () => {
             </div>
           ))}
         </div>
+        <div className=" d-flex align-items-center justify-content-center mt-3 pt-1  border-top">
+          <span> @ Made By Yogendra Singh Rathore </span>
+        </div>
+
       </div>
     </section>
   );
