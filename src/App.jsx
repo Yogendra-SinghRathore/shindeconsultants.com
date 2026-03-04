@@ -14,6 +14,7 @@ import Elevation from "./pages/Elevation";
 import Floor from "./pages/Floor";
 import Interior from "./pages/Interior";
 import WhatsAppFloat from "./components/Whatsappfloat";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -31,6 +32,8 @@ function App() {
   return (
     <>
       <Navbar />
+
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactUs />} />

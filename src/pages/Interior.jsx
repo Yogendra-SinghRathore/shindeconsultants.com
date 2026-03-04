@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import serviceImg4 from "../assets/images/Furnitureimg.jpg";
+import serviceImg4 from "../assets/images/Interior.jpg";
 
 
 const Interior = () => {
