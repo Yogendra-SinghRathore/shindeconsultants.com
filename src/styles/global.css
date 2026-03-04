@@ -182,7 +182,7 @@ a {
 }
 
 .serviceHeadingBox {
-  max-width: 660px;
+  max-width: 695px;
 }
 
 .serviceHeadingBox h1 {
@@ -305,7 +305,7 @@ a {
 
 .offerBoxText h1 {
   color: #fff;
-  max-width: 660px;
+  max-width: 895px;
   font-size: 4em;
 }
 
@@ -573,6 +573,13 @@ a {
   color: rgb(0, 0, 225);
 }
 
+.servicePageImg 
+  {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 @media (min-width:992px) {
   .projectSlide img {
@@ -754,11 +761,16 @@ a {
   }
 
   .section-title {
-    font-size: 12px;
+    font-size: 9px;
   }
-  .whatsapp-float{
+
+  .whatsapp-float {
     width: 55px;
     height: 55px;
+  }
+
+  .brandLogo {
+    width: 185px;
   }
 }
 

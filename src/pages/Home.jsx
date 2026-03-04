@@ -41,14 +41,14 @@ const Home = () => {
       route: "elevation",
       img: serviceImg2,
       number: "02",
-      heading: "Elevation Design",
-      desc: "Our elevation design focuses on creating visually striking and modern building exteriors that enhance overall property value, reflect architectural character, and balance aesthetics with practical elements like ventilation, lighting, and long-lasting exterior finishes.",
+      heading: "Architectural & Elevation Design",
+      desc: "We design modern and functional building exteriors that enhance property value while balancing aesthetics, ventilation, lighting, and durable finishing materials suited for long-term performance.",
     },
     {
       route: "floor",
       img: serviceImg3,
       number: "03",
-      heading: "Floor Planning",
+      heading: "Architectural Floor Planning",
       desc: "We design smart and functional floor plans that optimize space utilization, improve movement flow, and ensure every room is positioned for maximum comfort, natural light, ventilation, and efficient use of available area for better living and working experiences.",
     },
     {
@@ -101,26 +101,26 @@ const Home = () => {
     {
       id: 1,
       img: processIcon1,
-      heading: "Consultation & Discovery",
-      text: "We start by understanding your needs, style preferences, and lifestyle through an in-depth.",
+      heading: "Project Consultation",
+      text: "Understanding requirements, budget, site conditions, and functional goals.",
     },
     {
       id: 2,
       img: processIcon2,
-      heading: "Concept & Planning",
-      text: "Our team creates mood boards, layouts, and design concepts tailored to your vision.",
+      heading: "Design & Structural Planning",
+      text: "Architectural layouts, elevation design, and structural blueprints.",
     },
     {
       id: 3,
       img: processIcon3,
-      heading: "Design Development",
-      text: "From material selection to detailed 3D visualizations, we refine every aspect for perfection.",
+      heading: "Approval & Cost Finalization",
+      text: "Clear quotations and technical planning before execution.",
     },
     {
       id: 4,
       img: processIcon4,
-      heading: "Execution & Styling",
-      text: "We manage the entire implementation, ensuring every detail comes to life beautifully.",
+      heading: "Construction & Delivery",
+      text: "Timely execution with quality control and site supervision.",
     },
   ];
 
@@ -349,11 +349,12 @@ const Home = () => {
                 >
                   <div className="section-icon"></div>
                   <div className="section-title">
-                    End-to-End Home Design & Build Solutions
+                    {/* End-to-End Home Design & Build Solutions */}
+                    Architectural, Structural & Construction Experts
                   </div>
                 </div>
                 <h1 className="hero-title reveal-brush text-uppercase" >
-                  {/* INTERIOR FOR HOME */}
+                  {/* Complete Building Solutions */}
                   Home Design & Construction
                 </h1>
 
@@ -377,7 +378,7 @@ const Home = () => {
                 </div>
 
                 <p className="mb-0" data-aos="fade-up" data-aos-delay="400">
-                  From floor plans and elevations to construction and interiors, we deliver complete home solutions tailored to your vision and lifestyle.
+                  From architectural planning and structural design to turnkey construction and interiors, we deliver reliable, cost-efficient building solutions tailored for residential, commercial, and industrial projects.
                   {/* Crafting interiors that showcase your individuality, elevate
                   your lifestyle, and infuse timeless beauty into every space. */}
                 </p>
@@ -396,10 +397,7 @@ const Home = () => {
           </div>
           <div className="about-box about-inner-box">
             <h2 className="aboutDesc gsap-fade-up">
-              In 2010, a passionate team of designers founded Aurelo with a
-              simple mission to transform bold visions into timeless
-              interiors. We’re known for more than just designing spaces — we
-              craft experiences that inspire, comfort, and endure.
+              Established in 2015, Shinde Consultants has been delivering architectural design, structural engineering, and complete construction services across Indore. Led by Akshay Shinde, our firm is built on transparency, structural precision, and timely project execution.
             </h2>
             <div className=" d-flex gap-3 align-items-center">
               <NavLink to="/contact" className="primary-button aboutBtn">
@@ -414,19 +412,19 @@ const Home = () => {
               <div className="col-lg-4 mt-2 mt-sm-5">
                 <div className="counterBox">
                   <div className="counterInnerBox">
-                    <h2 data-count="60" data-suffix="M+">0</h2>
-                    <span>Savings Money</span>
+                    <h2 data-count="150" data-suffix="+">0</h2>
+                    <span>Projects Completed</span>
                   </div>
 
                   <div className="InnercounterBox">
                     <div className="counterInnerBox">
-                      <h2 data-count="10" data-suffix="k+">0</h2>
-                      <span>Global Clients</span>
+                      <h2 data-count="10" data-suffix="+">0</h2>
+                      <span>Years Experience</span>
                     </div>
 
                     <div className="counterInnerBox">
                       <h2 data-count="98" data-suffix="%">0</h2>
-                      <span>Clients satisfaction</span>
+                      <span>Client Satisfaction</span>
                     </div>
                   </div>
                 </div>
@@ -458,7 +456,7 @@ const Home = () => {
 
           <div className="serviceHeader">
             <div className="serviceHeadingBox ">
-              <h1 className="reveal-brush">Discover our interior design solutions.</h1>
+              <h1 className="reveal-brush">Complete Construction & Design Experts</h1>
             </div>
             <div className=" serviceBtnBox">
               <NavLink to="/contact" className="primary-button">
@@ -515,7 +513,7 @@ const Home = () => {
 
           <div className="serviceHeader">
             <div className="serviceHeadingBox">
-              <h1 className="reveal-brush">A showcase of timeless interiors.</h1>
+              <h1 className="reveal-brush">A curated set of finest projects.</h1>
             </div>
             <div className=" serviceBtnBox">
               <NavLink to="/contact" className="primary-button">
@@ -601,7 +599,7 @@ const Home = () => {
 
           <div className="serviceHeader">
             <div className="serviceHeadingBox">
-              <h1 className="reveal-brush">What our customers say.</h1>
+              <h1 className="reveal-brush">What Our Clients Say.</h1>
             </div>
           </div>
           <TestimonialSlider />
@@ -612,7 +610,7 @@ const Home = () => {
         <div className="container-fluid gx-0">
           <div className="offerBox">
             <div className="container offerBoxText">
-              <h1 className="reveal-brush">Ready to redefine your space? let’s talk</h1>
+              <h1 className="reveal-brush">Planning a New Construction Project? Let’s Build It Right.</h1>
               <div className=" serviceBtnBox">
                 <NavLink to="/contact" className="secondry-button offerBoxBtn">
                   Book Appoinment

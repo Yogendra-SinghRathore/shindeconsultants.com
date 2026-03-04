@@ -7,6 +7,15 @@ const Navbar = () => {
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("hero");
 
+  const closeNavbar = () => {
+    if (window.innerWidth >= 992) return;
+
+    const navbar = document.getElementById("navbarScroll");
+    if (navbar?.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  };
+
   const handleSectionNav = (id) => {
     setActiveSection(id);
     closeNavbar();
@@ -17,29 +26,17 @@ const Navbar = () => {
       setTimeout(() => {
         const el = document.getElementById(id);
         el?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 120);
+      }, 400);
     } else {
       const el = document.getElementById(id);
       el?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-  const closeNavbar = () => {
-    if (window.innerWidth >= 992) return;
-
-    const navbar = document.getElementById("navbarScroll");
-    if (!navbar) return;
-
-    const bsCollapse =
-      window.bootstrap.Collapse.getInstance(navbar) ||
-      new window.bootstrap.Collapse(navbar, { toggle: false });
-
-    bsCollapse.hide();
-  };
-
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-white navbar-light mb-3">
       <div className="container bg-white navbarBorder">
+        
         {/* Logo */}
         <NavLink
           className="navbar-brand fw-bold"
@@ -65,10 +62,10 @@ const Navbar = () => {
         {/* Nav Content */}
         <div className="collapse navbar-collapse" id="navbarScroll">
           <ul className="navbar-nav mx-auto my-2 my-lg-0">
+
             <li className="nav-item">
               <button
-                className={`nav-link btn btn-link ${activeSection === "hero" ? "active" : ""
-                  }`}
+                className={`nav-link btn btn-link ${activeSection === "hero" ? "active" : ""}`}
                 onClick={() => handleSectionNav("hero")}
               >
                 Home
@@ -77,8 +74,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <button
-                className={`nav-link btn btn-link ${activeSection === "about" ? "active" : ""
-                  }`}
+                className={`nav-link btn btn-link ${activeSection === "about" ? "active" : ""}`}
                 onClick={() => handleSectionNav("about")}
               >
                 About
@@ -87,8 +83,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <button
-                className={`nav-link btn btn-link ${activeSection === "service" ? "active" : ""
-                  }`}
+                className={`nav-link btn btn-link ${activeSection === "service" ? "active" : ""}`}
                 onClick={() => handleSectionNav("service")}
               >
                 Service
@@ -97,8 +92,7 @@ const Navbar = () => {
 
             <li className="nav-item">
               <button
-                className={`nav-link btn btn-link ${activeSection === "project" ? "active" : ""
-                  }`}
+                className={`nav-link btn btn-link ${activeSection === "project" ? "active" : ""}`}
                 onClick={() => handleSectionNav("project")}
               >
                 Project
@@ -115,8 +109,11 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-              >Contact</NavLink>
+              >
+                Contact
+              </NavLink>
             </li>
+
           </ul>
 
           {/* Right CTA */}
@@ -129,6 +126,7 @@ const Navbar = () => {
               Get A Quote
             </NavLink>
           </div>
+
         </div>
       </div>
     </nav>
